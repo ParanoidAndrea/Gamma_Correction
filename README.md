@@ -39,7 +39,10 @@ The code uses the OpenCV library to perform the gamma correction, making it effi
     ├── Gamma.jpg           //one of the output picture
 # Input and Output
 Place the image in the root directory, which will display as srcImage:
+
 ![image](https://user-images.githubusercontent.com/82789287/218583478-b28b0032-47dc-42e1-956d-b8aa2521f49f.png)
+
 Run the program, two result images will show:
+
 ![image](https://user-images.githubusercontent.com/82789287/218583657-dc57cd2e-8b2b-4aec-af72-2c9639a8d6d7.png)
 

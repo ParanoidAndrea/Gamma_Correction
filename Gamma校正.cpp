@@ -14,7 +14,7 @@
 using namespace cv;
 
 // Function to perform gamma correction on an image
-Mat gammaTransform(Mat& srcImage, float kFactor)
+Mat GammaTransform(Mat& srcImage, float kFactor)
 {
 	// Look-up table (LUT) with 256 elements of type unsigned char
 	unsigned char LUT[256];
@@ -77,8 +77,8 @@ int main()
 	float kFactor2 = 1 / gamma1;
 
 	// Apply gamma correction to the source image with kFactor1 and kFactor2
-	Mat result1 = gammaTransform(srcImage, kFactor1);
-	Mat result2 = gammaTransform(srcImage, kFactor2);
+	Mat result1 = GammaTransform(srcImage, kFactor1);
+	Mat result2 = GammaTransform(srcImage, kFactor2);
 
 	// Display the source image and the two results
 	imshow("srcImage", srcImage);
